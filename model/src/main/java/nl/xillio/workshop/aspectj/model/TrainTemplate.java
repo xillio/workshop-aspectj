@@ -1,6 +1,6 @@
 package nl.xillio.workshop.aspectj.model;
 
-import nl.xillio.workshop.aspectj.aspects.ModelElement;
+import nl.xillio.workshop.aspectj.aspects.PersistentFacet;
 import nl.xillio.workshop.aspectj.model.tools.Tools;
 
 import java.time.LocalTime;
@@ -15,8 +15,7 @@ import java.util.TreeSet;
  * <p>
  * This representation of the train trip is in terms of the stations it stops at.
  */
-@ModelElement
-public class TrainTemplate {
+public class TrainTemplate implements PersistentFacet {
     private static final Comparator<TrainTemplateStop> trainTemplateStopOrder = Comparator.comparing(TrainTemplateStop::getComparableArrivalTime);
     private final String trainNumber;
     private final LocalTime departureTime;

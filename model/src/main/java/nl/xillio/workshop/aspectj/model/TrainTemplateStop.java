@@ -1,6 +1,6 @@
 package nl.xillio.workshop.aspectj.model;
 
-import nl.xillio.workshop.aspectj.aspects.ModelElement;
+import nl.xillio.workshop.aspectj.aspects.PersistentFacet;
 
 import java.time.Duration;
 import java.util.Objects;
@@ -10,8 +10,7 @@ import java.util.Objects;
  * Notice the times at which the stop starts and ends are expressed as displacements from the time the train left the first station,
  * so the actual local time the train, for example, stops is stop.getTrain().getDepartureTime() + stop.getArrivalTimeDisplacement().
  */
-@ModelElement
-public class TrainTemplateStop {
+public class TrainTemplateStop implements PersistentFacet {
     private final TrainTemplate train;
     private final Track track;
     private final Duration arrivalTimeDisplacement;

@@ -11,10 +11,4 @@ public class PersistentFacetImpl implements PersistentFacet {
     public int getId() {
         return id;
     }
-
-    @Override
-    public void save(ModelPersistence model) {
-        int id = model.save(this);
-        this.id = id;
-    }
 }

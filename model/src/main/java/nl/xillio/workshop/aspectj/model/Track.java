@@ -1,14 +1,13 @@
 package nl.xillio.workshop.aspectj.model;
 
-import nl.xillio.workshop.aspectj.aspects.ModelElement;
+import nl.xillio.workshop.aspectj.aspects.PersistentFacet;
 
 import java.util.Objects;
 
 /**
  * Represents a specific track at a station.
  */
-@ModelElement
-public class Track {
+public class Track implements PersistentFacet {
     private final Location location;
     private final String trackName;
     private final boolean hasFacilities;

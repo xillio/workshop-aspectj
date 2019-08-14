@@ -9,3 +9,4 @@ IntelliJ will not be able to do compile aspects until it mvn has downloaded the 
 #References
 [All docs root](https://www.eclipse.org/aspectj/doc/released/index.html)
 [Cheat sheet](https://www.eclipse.org/aspectj/doc/released/quick5.pdf)
+[AspectJ Maven plugin](https://www.mojohaus.org/aspectj-maven-plugin/multimodule/multimodule_strategy.html)

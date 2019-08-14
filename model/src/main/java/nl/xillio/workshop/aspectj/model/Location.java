@@ -1,6 +1,6 @@
 package nl.xillio.workshop.aspectj.model;
 
-import nl.xillio.workshop.aspectj.aspects.ModelElement;
+import nl.xillio.workshop.aspectj.aspects.PersistentFacet;
 
 import java.util.Collections;
 import java.util.HashSet;
@@ -10,8 +10,7 @@ import java.util.Set;
 /**
  * Represents a station.
  */
-@ModelElement
-public class Location {
+public class Location implements PersistentFacet {
     private final String name;
     private final double longitude;
     private final double latitude;
